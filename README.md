@@ -77,10 +77,25 @@ If you have suggestions or issues, please email me at [youremail@whatever.com](w
 ### Branching
 
 - Branches are created from the `dev` branch of the repository
-- Branch names are based off of ticket id (i.e. `TTT-##`)
-- To create a new branch: `git checkout -b TTT-##`
+- Branch (story branch) names are based off of ticket id (i.e. `TTT-##`)
+- To create a new branch: `git checkout -b <story branch>`
 
 ### Pull Request (PR)
+
+- Pull requests are to be made after all feature development and testing scripts have been written
+- An approver needs to be assigned and team pinged about new branch
+- Branches **ARE NOT** merged from GitHub
+- Branches should be deleted after PR has been approved and branch merged into `dev`
+- Once approved, branch owner commits the branch as follows:
+  1. `git checkout dev`
+  2. `git fetch --all`
+  3. `git pull origin dev`
+  4. `git merge --squash <story branch>`
+  - Resolve any merge conflicts before continuing
+  5. `git commit -a -m "<story branch>: <story title>"`
+  6. `git push origin dev`
+  7. `git branch -D <story branch>`
+  8. `git push origin :<story branch>`
 
 ### Merging into `dev`
 
