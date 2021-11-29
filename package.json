@@ -2,12 +2,18 @@
   "name": "tic-tac-toe",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.24.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
@@ -15,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "nodemon --watch server server/server.js",
+    "client": "react-scripts start"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +42,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "![MIT LICENSE](https://img.shields.io/github/license/William-Krug/tic-tac-toe) ![REPO SIZE](https://img.shields.io/github/repo-size/William-Krug/tic-tac-toe) ![TOP_LANGUAGE](https://img.shields.io/github/languages/top/William-Krug/tic-tac-toe) ![FORKS](https://img.shields.io/github/forks/William-Krug/tic-tac-toe)",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/William-Krug/tic-tac-toe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/William-Krug/tic-tac-toe/issues"
+  },
+  "homepage": "https://github.com/William-Krug/tic-tac-toe#readme"
 }

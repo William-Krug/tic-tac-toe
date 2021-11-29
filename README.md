@@ -76,7 +76,7 @@ If you have suggestions or issues, please email me at [youremail@whatever.com](w
 
 ### Branching
 
-- Branch names are based off of ticket id: `git branch -b TTT-#`
+- Branch names are based off of ticket id: `git checkout -b TTT-#`
 
 ### Pull Request (PR)
 
