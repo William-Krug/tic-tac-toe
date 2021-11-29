@@ -76,7 +76,9 @@ If you have suggestions or issues, please email me at [youremail@whatever.com](w
 
 ### Branching
 
-- Branch names are based off of ticket id: `git checkout -b TTT-#`
+- Branches are created from the `dev` branch of the repository
+- Branch names are based off of ticket id (i.e. `TTT-##`)
+- To create a new branch: `git checkout -b TTT-##`
 
 ### Pull Request (PR)
 
